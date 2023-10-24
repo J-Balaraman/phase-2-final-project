@@ -15,7 +15,7 @@ const routes = [
         errorElement: <ErrorPage />
       },
       {
-        path: "/songs",
+        path: "/songs/:title",
         element: <SongContainer />,
         errorElement: <ErrorPage />
       }
