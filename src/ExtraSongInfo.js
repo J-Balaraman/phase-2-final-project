@@ -3,7 +3,7 @@ import React from "react";
 function ExtraSongInfo(){
     return (
         <div>
-            No
+            Extra Song Info Here
         </div>
     )
 }
