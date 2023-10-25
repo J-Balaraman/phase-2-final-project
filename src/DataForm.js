@@ -2,51 +2,93 @@ import React, { useState } from "react";
 import NavBar from "./NavBar";
 
 function DataForm(){
-    
     const [title, setTitle] = useState('')
+    const [artist, setArtist] = useState('')
+    const [album, setAlbum] = useState('')
+    const [genre, setGenre] = useState('')
+    const [releaseDate, setReleaseDate] = useState('')
+    const [duration, setDuration] = useState('')
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        const songData = {
+            title: title,
+            artist: artist,
+            album: album,
+            genre: genre,
+            releaseDate: releaseDate,
+            duration: duration
+        };
+
+        fetch("http://localhost:6001/songs", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(songData),
+        })
+            .then((r) => r.json())
+            .then((newSong) => {
+                setTitle("");
+                setArtist("");
+                setAlbum("");
+                setGenre("");
+                setReleaseDate("");
+                setDuration("");
+                console.log(newSong)
+            })
+    }
+
     return (
         <>
             <header>
                 <NavBar />
             </header>
             <div className="new-song-form">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <input
                         type="text"
                         name="title"
                         placeholder="Song"
+                        value={title}
                         onChange={(e) => setTitle(e.target.value)}
                     />
                     <input
                         type="text"
                         name="artist"
                         placeholder="Artist"
-                        /*onChange={(e) => setSong(e.target.value)}*/
+                        value={artist}
+                        onChange={(e) => setArtist(e.target.value)}
                     />
                     <input
                         type="text"
                         name="album"
                         placeholder="Album"
-                        /*onChange={(e) => setSong(e.target.value)}*/
+                        value={album}
+                        onChange={(e) => setAlbum(e.target.value)}
                     />
                     <input
                         type="text"
                         name="genre"
                         placeholder="Genre"
-                        /*onChange={(e) => setSong(e.target.value)}*/
+                        value={genre}
+                        onChange={(e) => setGenre(e.target.value)}
                     />
                     <input
                         type="text"
-                        name="release-date"
+                        name="releaseDate"
                         placeholder="Release Date"
-                        /*onChange={(e) => setSong(e.target.value)}*/
+                        value={releaseDate}
+                        onChange={(e) => setReleaseDate(e.target.value)}
                     />
                     <input
                         type="text"
                         name="duration"
                         placeholder="Duration"
-                        /*onChange={(e) => setSong(e.target.value)}*/
+                        value={duration}
+                        onChange={(e) => setDuration(e.target.value)}
                     />
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </>

@@ -1,31 +1,31 @@
 {
-    "songs": [
-        {
-            "id": 1,
-            "title": "Higher",
-            "artist": "Creed",
-            "album": "Human Clay",
-            "genre": "post-grunge",
-            "releaseDate": "08-24-1999",
-            "duration": "05:16"
-        },
-        {
-            "id": 2,
-            "title": "Careless Whisper",
-            "artist": "George Michael",
-            "album": "Make It Big",
-            "genre": "Pop",
-            "releaseDate": "07-24-1984",
-            "duration": "05:03"
-        },
-        {
-            "id": 3,
-            "title": "My Hero",
-            "artist": "Foo Fighters",
-            "album": "The Colour and the Shape",
-            "genre": "Alt. Rock",
-            "releaseDate": "01-19-1998",
-            "duration": "04:20"
-        }
-    ]
+  "songs": [
+    {
+      "id": 1,
+      "title": "Higher",
+      "artist": "Creed",
+      "album": "Human Clay",
+      "genre": "post-grunge",
+      "releaseDate": "08-24-1999",
+      "duration": "05:16"
+    },
+    {
+      "id": 2,
+      "title": "Careless Whisper",
+      "artist": "George Michael",
+      "album": "Make It Big",
+      "genre": "Pop",
+      "releaseDate": "07-24-1984",
+      "duration": "05:03"
+    },
+    {
+      "id": 3,
+      "title": "My Hero",
+      "artist": "Foo Fighters",
+      "album": "The Colour and the Shape",
+      "genre": "Alt. Rock",
+      "releaseDate": "01-19-1998",
+      "duration": "04:20"
+    }
+  ]
 }
