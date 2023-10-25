@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./NavBar";
 
-//let songs = {songs}
-
 function DataForm(){
+    
+    const [title, setTitle] = useState('')
     return (
         <>
             <header>
@@ -15,7 +15,7 @@ function DataForm(){
                         type="text"
                         name="title"
                         placeholder="Song"
-                        /*onChange={(e) => setSong(e.target.value)}*/
+                        onChange={(e) => setTitle(e.target.value)}
                     />
                     <input
                         type="text"
