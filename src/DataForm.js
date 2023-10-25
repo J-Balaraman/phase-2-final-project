@@ -9,7 +9,7 @@ function DataForm(){
             <header>
                 <NavBar />
             </header>
-            <div className="new-song">
+            <div className="new-song-form">
                 <form>
                     <input
                         type="text"

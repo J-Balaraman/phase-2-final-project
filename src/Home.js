@@ -3,15 +3,15 @@ import NavBar from "./NavBar";
 
 function Home(){
     return (
-        <>
+        <main>
             <header>
                 <NavBar />
             </header>
-            <main>
+            <div>
                 <h5>To add a song, click the "Submit A Song" link</h5>
                 <h5>To view songs, click the "Songs" link</h5>
-            </main>
-        </>
+            </div>
+        </main>
     )
 }
 
