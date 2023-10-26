@@ -86,7 +86,9 @@ function DataForm({onAddSong}){
                         value={duration}
                         onChange={(e) => setDuration(e.target.value)}
                     />
-                    <button type="submit">Submit</button>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
         </main>
