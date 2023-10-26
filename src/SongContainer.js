@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SongCard from "./SongCard";
 import NavBar from "./NavBar";
+import "./SongContainer.css"
 
 function SongContainer() {
     const [songs, setSongs] = useState([]);

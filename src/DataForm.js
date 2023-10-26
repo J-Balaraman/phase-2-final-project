@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "./NavBar";
 import SongCard from "./SongCard";
+import "./DataForm.css"
 
 function DataForm(){
     const [title, setTitle] = useState('')
