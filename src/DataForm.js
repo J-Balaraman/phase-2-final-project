@@ -41,6 +41,7 @@ function DataForm({onAddSong}){
 
     return (
         <>
+        <h2>Add A Song</h2>
             <div className="new-song-form">
                 <form onSubmit={handleSubmit}>
                     <input
