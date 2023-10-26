@@ -1,3 +1,4 @@
+/* Home.css */
 main {
   display: flex;
   flex-direction: column;
@@ -5,8 +6,19 @@ main {
   margin: 20px;
 }
 
+header {
+  background-color: #f8f8f8;
+  color: #ff8800;
+  padding: 10px 0;
+  text-align: center;
+}
+
+div {
+  text-align: center;
+  margin-top: 20px;
+}
+
 h5 {
-  font-size: 16px;
-  color: #333;
+  font-size: 18px;
   margin: 10px 0;
 }

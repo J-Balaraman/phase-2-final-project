@@ -1,27 +1,17 @@
-/* NavBar.css */
 .navbar {
-    background-color: orange;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 10px;
-    border-radius: 10px;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px; /* Add padding to create a button-like appearance */
-    border: 2px solid transparent; /* Add a border for the button effect */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s, border-color 0.3s; /* Add transition for smooth hover effect */
-  }
-  
-  .navbar a:hover {
-    background-color: darkorange;
-    border-color: darkorange;
-    text-decoration: none; /* Remove underline on hover */
-  }
-  
+  background-color: #f8f8f8;
+  color: #ff8800;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ff8800;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+}
