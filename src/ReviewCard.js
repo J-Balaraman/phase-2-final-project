@@ -4,7 +4,7 @@ function ReviewCard() {
     return(
         <main>
             <ul>
-                Beans
+                Dingus
             </ul>
         </main>
     )

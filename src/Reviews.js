@@ -10,7 +10,8 @@ function Reviews() {
                 <NavBar/>
             </header>
             <ul>
-                Beans
+                <ReviewForm />
+                <ReviewCard />
             </ul>
         </main>
     )

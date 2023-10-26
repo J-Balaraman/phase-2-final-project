@@ -4,7 +4,7 @@ function ReviewForm() {
     return(
         <main>
             <ul>
-                Beans
+                Bingus
             </ul>
         </main>
     )
