@@ -46,7 +46,9 @@ function ReviewForm({onAddReview}) {
                         value={user}
                         onChange={(e) => setUser(e.target.value)}
                     />
-                    <button type="submit">Submit</button>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
         </main>

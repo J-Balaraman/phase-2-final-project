@@ -1,19 +1,21 @@
+/* ReviewCard.css */
 ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #f8f8f8;
-  }
-  
-  h3 {
-    font-size: 24px;
-    color: #ff8800;
-    margin: 0;
-  }
-  
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f0f0f0; /* More off-white background */
+  font-family: Consolas, monospace;
+  color: #000; /* Black text color */
+}
+
+h3 {
+  font-size: 24px;
+  color: black; /* Orange text color */
+  margin: 0;
+}

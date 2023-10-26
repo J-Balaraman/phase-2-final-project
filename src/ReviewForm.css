@@ -6,14 +6,17 @@ main {
   }
   
   .new-review-form {
-    background-color: #f8f8f8;
+    background-color: #f0f0f0;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    font-family: Consolas, monospace;
+    color: #000;
   }
   
   .new-review-form input {
+    max-width: 300px;
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -23,16 +26,11 @@ main {
   
   .new-review-form button {
     background-color: #ff8800;
-    color: #fff;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  h2 {
-    font-size: 24px;
-    color: #ff8800;
   }
   
