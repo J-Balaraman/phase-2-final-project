@@ -4,10 +4,12 @@ import NavBar from "./NavBar";
 function Reviews() {
     return(
         <main>
-        <header>
-            <NavBar/>
-        </header>
-        Beans
+            <header>
+                <NavBar/>
+            </header>
+            <ul>
+                Beans
+            </ul>
         </main>
     )
 }

@@ -27,5 +27,12 @@
       "releaseDate": "01-19-1998",
       "duration": "04:20"
     }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "reviewContent": "This is mid",
+      "user": "Michael Jackson"
+    }
   ]
 }
