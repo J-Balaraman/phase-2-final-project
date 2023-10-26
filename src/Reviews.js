@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import ReviewCard from "./ReviewCard";
 import ReviewForm from "./ReviewForm";
+import "./Reviews.css"
 
 function Reviews() {
     const [reviews, setReviews] = useState([]);

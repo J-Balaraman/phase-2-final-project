@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./ReviewForm.css"
+import "./ReviewCard.css"
 
 function ReviewCard({reviews}) {
     return(
