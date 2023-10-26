@@ -3,6 +3,7 @@ import DataForm from './DataForm'
 import SongContainer from './SongContainer'
 import ErrorPage from './ErrorPage'
 import ExtraSongInfo from './ExtraSongInfo'
+import Reviews from './Reviews'
 
 const routes = [
     {
@@ -11,8 +12,8 @@ const routes = [
         errorElement: <ErrorPage />
       },
       {
-        path: "/dataform",
-        element: <DataForm />,
+        path: "/reviews",
+        element: <Reviews />,
         errorElement: <ErrorPage />
       },
       {
