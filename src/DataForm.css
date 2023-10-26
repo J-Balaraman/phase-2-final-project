@@ -1,49 +1,52 @@
-header {
-    background-color: orange;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  .new-song-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    border-radius: 10px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 10px;
-  }
-  
-  button {
-    background-color: orange;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-  
-  button:hover {
-    background-color: darkorange;
-  }
-  
-  .new-song-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-  
+/* DataForm.css */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.new-song-form {
+  background-color: #f8f8f8; /* Off-white background */
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.new-song-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.new-song-form button {
+  background-color: #ff8800;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.new-song-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #ff8800;
+}
+
+.song-list a {
+  color: #ff8800;
+  text-decoration: none;
+}
+
+.song-list a:hover {
+  font-weight: bold;
+}
