@@ -9,7 +9,7 @@ function Home(){
                 <NavBar />
             </header>
             <div>
-                <h5>To add a song, click the "Submit A Song" link</h5>
+                <h5>Under Maintenance</h5>
                 <h5>To view songs, click the "Songs" link</h5>
             </div>
         </main>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SongCard from "./SongCard";
 import NavBar from "./NavBar";
 import "./SongContainer.css"
+import DataForm from "./DataForm";
 
 function SongContainer() {
     const [songs, setSongs] = useState([]);
@@ -14,12 +15,17 @@ function SongContainer() {
             });
     }, []);
 
+    function handleAddSong(newSong) {
+        setSongs([...songs, newSong])
+    }
+
     return (
         <>
             <header>
                 <NavBar />
             </header>
             <main>
+                <DataForm onAddSong={handleAddSong} />
                 <SongCard songs={songs} />
             </main>
         </>

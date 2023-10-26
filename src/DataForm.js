@@ -1,17 +1,13 @@
 import React, { useState } from "react";
-import NavBar from "./NavBar";
-import SongCard from "./SongCard";
 import "./DataForm.css"
 
-function DataForm(){
+function DataForm({onAddSong}){
     const [title, setTitle] = useState('')
     const [artist, setArtist] = useState('')
     const [album, setAlbum] = useState('')
     const [genre, setGenre] = useState('')
     const [releaseDate, setReleaseDate] = useState('')
     const [duration, setDuration] = useState('')
-    const [newSongEntry, setNewSongEntry] = useState([])
-    const [songSubmitted, setSongSubmitted] = useState(false)
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -39,16 +35,12 @@ function DataForm(){
                 setGenre("");
                 setReleaseDate("");
                 setDuration("");
-                setNewSongEntry(newSong)
-                setSongSubmitted(true)
+                onAddSong(newSong)
             })
     }
 
     return (
         <>
-            <header>
-                <NavBar />
-            </header>
             <div className="new-song-form">
                 <form onSubmit={handleSubmit}>
                     <input
@@ -95,12 +87,6 @@ function DataForm(){
                     />
                     <button type="submit">Submit</button>
                 </form>
-                {songSubmitted ? (
-                    <div className="new-song-info">
-                        <h2>New Song Information:</h2>
-                        <SongCard songs={[newSongEntry]} />
-                    </div>
-                ) : null}
             </div>
         </>
     )
