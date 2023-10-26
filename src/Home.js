@@ -9,8 +9,8 @@ function Home(){
                 <NavBar />
             </header>
             <div>
-                <h5>Under Maintenance</h5>
-                <h5>To view songs, click the "Songs" link</h5>
+                <h5>To view and add new songs, click the "Songs" link</h5>
+                <h5>To leave a review, click the "Review" link</h5>
             </div>
         </main>
     )
