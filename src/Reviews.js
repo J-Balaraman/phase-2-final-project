@@ -3,12 +3,12 @@ import NavBar from "./NavBar";
 
 function Reviews() {
     return(
-        <>
+        <main>
         <header>
             <NavBar/>
         </header>
         Beans
-        </>
+        </main>
     )
 }
 

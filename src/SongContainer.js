@@ -20,7 +20,7 @@ function SongContainer() {
     }
 
     return (
-        <>
+        <main>
             <header>
                 <NavBar />
             </header>
@@ -28,7 +28,7 @@ function SongContainer() {
                 <DataForm onAddSong={handleAddSong} />
                 <SongCard songs={songs} />
             </main>
-        </>
+        </main>
     );
 }
 

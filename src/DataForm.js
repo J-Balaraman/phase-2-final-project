@@ -40,7 +40,7 @@ function DataForm({onAddSong}){
     }
 
     return (
-        <>
+        <main>
         <h2>Add A Song</h2>
             <div className="new-song-form">
                 <form onSubmit={handleSubmit}>
@@ -89,7 +89,7 @@ function DataForm({onAddSong}){
                     <button type="submit">Submit</button>
                 </form>
             </div>
-        </>
+        </main>
     )
 }
 
