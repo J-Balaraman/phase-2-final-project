@@ -11,8 +11,8 @@ function NavBar(){
             <NavLink to='/songs' >
                 Songs
             </NavLink>
-            <NavLink to='/dataform' >
-                Submit A Song
+            <NavLink to='/reviews' >
+                Leave A Review
             </NavLink>
         </nav>
     )
