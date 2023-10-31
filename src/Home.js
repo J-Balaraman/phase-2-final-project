@@ -5,10 +5,10 @@ import "./Home.css";
 function Home() {
   return (
     <main className="home">
-      <header className="hero">
+      <header>
         <NavBar />
       </header>
-      <div className="hero-content">
+      <div>
           <h1>Welcome to Our Music World</h1>
           <p>Discover the rhythm of your soul</p>
         </div>
